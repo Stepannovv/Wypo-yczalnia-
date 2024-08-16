@@ -1,21 +1,67 @@
-.header {
-  padding: 20px 0;
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.nav-list {
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* Позволяет хедеру быть поверх изображения */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.2
+  ); /* Полупрозрачный фон для лучшей читаемости текста */
+  padding: 20px;
+}
+
+.nav {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  justify-content: space-between;
+}
+
+.company-title {
+  color: #fff;
+  font-size: 24px;
+  margin-left: 20px;
+  font-family: 'FTY Strategycide', sans-serif;
+}
+.header-svg {
+  fill: #fff;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin-left: 20px;
 }
 
 .nav-link {
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

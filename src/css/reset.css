@@ -33,3 +33,10 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+@font-face {
+  font-family: 'FTY Strategycide';
+  src: url('../fonts/FtyStrategycideNcv-elGl.ttf') format('truetype'); /* путь к файлу шрифта */
+  font-weight: normal;
+  font-style: normal;
+}
