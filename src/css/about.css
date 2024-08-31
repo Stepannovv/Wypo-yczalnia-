@@ -1,16 +1,18 @@
 .about {
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
+  /* background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 1) 4%,
-    rgba(41, 28, 143, 1) 100%
-  );
+    rgb(72, 70, 86) 100%
+  ); */
+  background: #fff;
 }
 .about-text-container {
   width: 680px;
   margin: 0 auto;
   padding: 50px 20px;
   color: #fff;
-  background-color: black;
+  background-color: rgba(38, 30, 30, 0.238);
+  box-shadow: 10px;
   border-radius: 25px;
 }
+/* ******************* */

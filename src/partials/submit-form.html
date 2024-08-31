@@ -1,0 +1,92 @@
+
+<!-- Overlay with Form -->
+  <div class="hero-overlay">
+    <!-- Form Container -->
+    <div class="form-container">
+      <h1>Zarezerwuj Teraz</h1>
+      <p>
+        Wypełnij formularz, aby zarezerwować.
+      </p>
+      <!-- Booking Form Start -->
+      <form action="../send_email.php" method="post">
+        <!-- Form Fields Here -->
+        <!-- Name Field -->
+        <label for="name">Imie i Nazwisko:</label>
+        <input type="text" id="name" name="name" required />
+
+        <!-- Email Field -->
+        <label for="email">Addres Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- Phone Number Field -->
+        <label for="phone">Numer Telefonu:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <!-- Preferred Date -->
+        <label for="date">Preferowana Data:</label>
+        <input type="date" id="date" name="date" required />
+
+        <!-- Boat Type -->
+        <label for="boat-type">Preferowany rodzaj:</label>
+        <select id="boat-type" name="boat-type" required>
+          <option value="small">Jednoosobowa Łódź</option>
+          <option value="small">Dwochosobowa Łódź</option>
+          <option value="large">Duża Łódź</option>
+        </select>
+
+        <!-- Duration -->
+        <label for="duration">Chce wypozyczyć:</label>
+        <select id="duration" name="duration" required>
+          <option value="2-hours">2 Godźiny</option>
+          <option value="4-hours">4 Godźiny</option>
+          <option value="half-day">Pół Dnia</option>
+          <option value="full-day">Cały Dzien</option>
+        </select>
+
+        <!-- Additional Services -->
+         
+         <h3 class="services-title">USŁUGI</h3>
+         <!-- <p class="services-text">(dodatkowo płatne)</p> -->
+         <div class="additional-services">
+            <div class="checkbox-container"> <input
+          type="checkbox"
+          id="delivery"
+          name="additional-services"
+          value="delivery"
+        />
+        <label for="delivery">Dostawa pod adres:</label></div>
+            
+        <div class="checkbox-container"> <input
+          type="checkbox"
+          id="gear"
+          name="additional-services"
+          value="fishing-gear"
+        />
+        <label for="gear">Sprzęt wędkarski</label></div>
+       
+        <div class="checkbox-container"> <input
+          type="checkbox"
+          id="guide"
+          name="additional-services"
+          value="guide"
+        />
+        <label for="guide">Instruktor</label></div>
+       
+         </div>
+        
+
+        <!-- Special Requests -->
+        <label for="requests">Informacje Dodatkowe:</label>
+        <textarea id="requests" name="requests" cols="40" rows="5"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Zarezerwuj Teraz</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+    </div>
+  </div>
+</section>

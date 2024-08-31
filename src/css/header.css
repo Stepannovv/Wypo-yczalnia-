@@ -18,13 +18,28 @@ html {
     0,
     0.2
   ); /* Полупрозрачный фон для лучшей читаемости текста */
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.logo-circle {
+  background: rgba(255, 255, 255, 0.893);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  padding: 0 0 0 5px;
 }
 
 .company-title {
@@ -39,12 +54,16 @@ html {
 .nav-list {
   list-style: none;
   display: flex;
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
 }
 
 .nav-item {
   margin-left: 20px;
+  transition: 500ms;
+}
+.nav-item:hover {
+  transform: scale(1.1);
 }
 
 .nav-link {
@@ -57,7 +76,7 @@ html {
   position: relative;
   height: 100vh;
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .hero-img {
