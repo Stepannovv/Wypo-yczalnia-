@@ -8,7 +8,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center; /* Center vertically */
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  background: rgba(0, 0, 0, 0.2); /* Semi-transparent black overlay */
 }
 
 /* Form Container Styling */
