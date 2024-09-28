@@ -2,6 +2,7 @@
 @import url(./reset.css);
 @import url(./about.css);
 @import url(./submit-form.css);
+@import url(./footer.css);
 /* Reset styles */
 h1,
 h2,
@@ -43,7 +44,7 @@ img {
 }
 
 body {
-  color: #fafafa;
+  color: #1c1d20;
   font-family: 'Inter Tight', sans-serif;
 }
 
@@ -52,6 +53,7 @@ html {
 }
 
 .container {
+  background-color: #1c1d20;
   min-width: 320px;
   max-width: 375px;
   margin: 0 auto;
