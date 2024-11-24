@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Wypozyczalnia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      rel="stylesheet"
+      href="https://www.fontspace.com/fty-strategycide-ncv-font-f28662"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script type="module" crossorigin src="/Wypozyczalnia/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/Wypozyczalnia/assets/vendor-1e8de1e0.js">
+    <link rel="stylesheet" href="/Wypozyczalnia/assets/vendor-6e20c738.css">
+    <link rel="stylesheet" href="/Wypozyczalnia/assets/index-03ec48ae.css">
+  </head>
+  <body>
+    <header class="header" id="header">
+  <nav class="nav">
+    <div class="logo-circle">
+      <a href="#header"><img src="/Wypozyczalnia/assets/logo-d3f6b160.png" alt="logo" class="logo" /></a>
+    </div>
+
+    <h1 class="company-title">
+      W y p o ż y c z a l n i a
+      <span>
+        <svg class="header-svg" width="32" height="32">
+          <use href="../img/hook.svg"></use></svg></span
+      >P r z e m k a
+    </h1>
+    <ul class="nav-list">
+      <li class="nav-item">
+        <a href="#about" class="nav-link">O nas</a>
+      </li>
+      <li class="nav-item">
+        <a href="#services" class="nav-link">Usługi</a>
+      </li>
+      <li class="nav-item">
+        <a href="#contact" class="nav-link">Contact</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+    <section class="hero">
+  <!-- Background Image -->
+  <img src="../img/hero.jpg" alt="hero" class="hero-img" />
+</section>
+
+    <section class="about">
+  <div class="about-img" data-aos="fade-left">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic1.jpg"
+              alt="reels1"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic2.jpg"
+              alt="reels2"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic3.jpg"
+              alt="reels3"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic4.jpg"
+              alt="reels4"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic5.jpg"
+              alt="reels5"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic6.jpg"
+              alt="reels6"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic7.jpg"
+              alt="reels7"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic8.jpg"
+              alt="reels"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+      </div>
+      <!-- Navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+  <div class="about-text-container" data-aos="fade-right">
+    <p class="about-text">
+      Nasza wypożyczalnia łodzi dla wędkarzy to miejsce, gdzie pasja spotyka się
+      z profesjonalizmem i wyjątkowym podejściem do klienta. Oferujemy szeroką
+      gamę łodzi, idealnych zarówno dla doświadczonych wędkarzy, jak i osób
+      dopiero rozpoczynających swoją przygodę z wędkarstwem. Wiemy, że każda
+      wyprawa na ryby jest wyjątkowa, dlatego nasza obsługa jest gotowa
+      dostosować się do Twoich potrzeb. Potrzebujesz łodzi na kilka godzin, cały
+      dzień, a może na cały weekend? U nas to Ty decydujesz, jak długo chcesz
+      korzystać z łodzi – jesteśmy elastyczni i dostosowujemy się do Twojego
+      harmonogramu. Dodatkowo, jeśli masz specjalne wymagania dotyczące
+      wyposażenia, z przyjemnością pomożemy w wyborze najlepszego sprzętu, by
+      Twoja wyprawa była jak najbardziej udana.
+    </p>
+  </div>
+  <div class="about-text-container" data-aos="fade-left">
+    <p class="about-text">
+      Naszym priorytetem jest Twoje zadowolenie, dlatego oferujemy również opcję
+      rezerwacji online oraz możliwość zmiany terminu wypożyczenia bez
+      dodatkowych opłat. Bez względu na to, czy planujesz poranną wyprawę na
+      jezioro, czy całodniową eskapadę w poszukiwaniu najlepszych łowisk,
+      jesteśmy tu, aby zapewnić Ci niezapomniane wrażenia z wędkowania. Dołącz
+      do grona zadowolonych klientów i ciesz się swobodą wędkowania na naszych
+      łodziach, dostosowanych do Twoich indywidualnych potrzeb.
+    </p>
+  </div>
+  <div class="about-img" data-aos="fade-right">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic1.jpg"
+              alt="reels1"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic2.jpg"
+              alt="reels2"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic3.jpg"
+              alt="reels3"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic4.jpg"
+              alt="reels4"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic5.jpg"
+              alt="reels5"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic6.jpg"
+              alt="reels6"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic7.jpg"
+              alt="reels7"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+        <div class="swiper-slide">
+          <picture class="project-picture">
+            <img
+              class="project-pic"
+              src="../img/aboutme-gallery/pic8.jpg"
+              alt="reels"
+              width="100%"
+              height="100%"
+            />
+          </picture>
+        </div>
+      </div>
+      <!-- Navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </div>
+</section>
+
+    
+<!-- Overlay with Form -->
+  <div class="hero-overlay">
+    <!-- Form Container -->
+    <div class="form-container" data-aos="fade-right">
+      <h1>Zarezerwuj Teraz</h1>
+      <p>
+        Wypełnij formularz, aby zarezerwować.
+      </p>
+      <!-- Booking Form Start -->
+      <form action="../send_email.php" method="post">
+        <!-- Form Fields Here -->
+        <!-- Name Field -->
+        <label for="name">Imie i Nazwisko:</label>
+        <input type="text" id="name" name="name" required />
+
+        <!-- Email Field -->
+        <label for="email">Addres Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- Phone Number Field -->
+        <label for="phone">Numer Telefonu:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <!-- Preferred Date -->
+         
+        <label for="date">Preferowana Data:</label>
+        <input type="date" id="date" name="date" required />
+
+        <!-- Boat Type -->
+        <label for="boat-type">Preferowany rodzaj:</label>
+        <select id="boat-type" name="boat-type" required>
+          <option value="small">Jednoosobowa Łódź</option>
+          <option value="small">Dwochosobowa Łódź</option>
+          <option value="large">Duża Łódź</option>
+        </select>
+
+        <!-- Duration -->
+        <label for="duration">Chce wypozyczyć:</label>
+        <select id="duration" name="duration" required>
+          <option value="2-hours">2 Godźiny</option>
+          <option value="4-hours">4 Godźiny</option>
+          <option value="half-day">Pół Dnia</option>
+          <option value="full-day">Cały Dzien</option>
+        </select>
+
+        <!-- Additional Services -->
+         
+         <h3 class="services-title">USŁUGI</h3>
+         <!-- <p class="services-text">(dodatkowo płatne)</p> -->
+         <div class="additional-services">
+            <div class="checkbox-container"> <input
+          type="checkbox"
+          id="delivery"
+          name="additional-services"
+          value="delivery"
+        />
+        <label for="delivery">Dostawa pod adres:</label></div>
+            
+        <div class="checkbox-container"> <input
+          type="checkbox"
+          id="gear"
+          name="additional-services"
+          value="fishing-gear"
+        />
+        <label for="gear">Sprzęt wędkarski</label></div>
+       
+        <div class="checkbox-container"> <input
+          type="checkbox"
+          id="guide"
+          name="additional-services"
+          value="guide"
+        />
+        <label for="guide">Instruktor</label></div>
+       
+         </div>
+        
+
+        <!-- Special Requests -->
+        <label for="requests">Informacje Dodatkowe:</label>
+        <textarea id="requests" name="requests" cols="40" rows="5"></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit">Zarezerwuj Teraz</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+    </div>
+  </div>
+</section>
+
+    <footer
+  class="footer glass-bg"
+  data-aos="fade-up"
+  data-aos-anchor-placement="top-bottom"
+  id="footer"
+>
+  <div class="container footer-container">
+    <div class="footer-top">
+      <img
+        class="header-img-logo"
+        src="../img/hook.svg"
+        alt="img-logo"
+        height="50"
+        width="50"
+      />
+
+      <h2 class="footer-title">
+        Masz pytanie<span class="title-accent"> napisz do nas</span>
+      </h2>
+      <!-- <h2 class="footer-title">together</h2> -->
+    </div>
+    <form class="footer-form">
+      <div class="input-wrapper">
+        <input
+          class="footer-form-input"
+          id="user-email"
+          type="email"
+          name="e-mail"
+          placeholder="client@gmail.com"
+          autocomplete="off"
+          aria-label="Email"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+        />
+        <div id="email-mirror" class="input-mirror"></div>
+      </div>
+      <div class="input-wrapper">
+        <input
+          class="footer-form-input"
+          id="user-comment"
+          type="text"
+          name="comments"
+          placeholder="komentarz"
+          autocomplete="off"
+          aria-label="Comments"
+        />
+        <div id="comment-mirror" class="input-mirror"></div>
+      </div>
+      <button
+        class="footer-form-btn"
+        id="form-btn"
+        type="submit"
+        aria-label="submit form"
+      >
+        Wyslij
+      </button>
+    </form>
+    <address class="footer-bottom">
+      <ul class="contacts">
+        <li class="contacts-item contacts-mail">
+          <a
+            class="contacts-link"
+            href="mailto:wypozyczalnia@gmail.com"
+            rel="noopener
+            noreferrer"
+            aria-label="Email Lloyd Jefferson"
+            >wypozyczalnia@gmail.com</a
+          >
+        </li>
+        <li class="contacts-item contacts-phone">
+          <a
+            class="contacts-link"
+            href="tel:++4801111111111"
+            rel="noopener
+            noreferrer"
+            aria-label="Zadzwoń teraz"
+            >+4801111111111</a
+          >
+        </li>
+      </ul>
+    </address>
+  </div>
+</footer>
+<!-- Modal -->
+<div class="footer-backdrop">
+  <div class="modal">
+    <div class="modal-box">
+      <button class="close-btn" type="button" aria-label="close modal">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 6L6 18"
+            stroke="#FAFAFA"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M6 6L18 18"
+            stroke="#FAFAFA"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+      <h3 class="modal-title">Thank you for your interest in cooperation!</h3>
+      <p class="modal-message">
+        The manager will contact you shortly to discuss further details and
+        opportunities for cooperation. Please stay in touch.
+      </p>
+    </div>
+  </div>
+</div>
+<script>
+  function truncateText(input, mirror) {
+    const maxWidth = input.clientWidth; // Максимальна ширина поля вводу
+    const padding =
+      parseInt(getComputedStyle(input).paddingLeft) +
+      parseInt(getComputedStyle(input).paddingRight); // Padding
+    const border =
+      parseInt(getComputedStyle(input).borderLeftWidth) +
+      parseInt(getComputedStyle(input).borderRightWidth); // Border
+    const availableWidth = maxWidth - padding - border; // Доступна ширина для тексту
+    mirror.style.fontSize = getComputedStyle(input).fontSize;
+    mirror.style.fontFamily = getComputedStyle(input).fontFamily;
+    mirror.style.padding = getComputedStyle(input).padding;
+    mirror.style.border = getComputedStyle(input).border;
+    let text = input.value;
+    let truncatedText = text;
+    mirror.textContent = text;
+    if (mirror.offsetWidth > availableWidth) {
+      for (let i = text.length - 1; i >= 0; i--) {
+        mirror.textContent = text.substring(0, i) + '...';
+        if (mirror.offsetWidth <= availableWidth) {
+          truncatedText = text.substring(0, i) + '...';
+          break;
+        }
+      }
+    }
+    input.value = truncatedText;
+  }
+  const emailInput = document.getElementById('user-email');
+  const emailMirror = document.getElementById('email-mirror');
+  emailInput.addEventListener('input', function () {
+    truncateText(this, emailMirror);
+  });
+  const commentInput = document.getElementById('user-comment');
+  const commentMirror = document.getElementById('comment-mirror');
+  commentInput.addEventListener('input', function () {
+    truncateText(this, commentMirror);
+  });
+</script>
+
+    
+  </body>
+</html>
