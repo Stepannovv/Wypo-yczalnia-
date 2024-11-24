@@ -1,23 +1,33 @@
 <?php
-// Check if the form is submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Retrieve form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $date = $_POST['date'];
-    $boat_type = $_POST['boat-type'];
-    $duration = $_POST['duration'];
-    $services = implode(", ", $_POST['additional-services'] ?? []); // Handle checkboxes
-    $requests = $_POST['requests'];
+// Обработчик формы
+if ($_SERVER["REQUEST_METHOD"] === "POST") {
+    // Получение данных из формы с фильтрацией
+    $name = htmlspecialchars(trim($_POST['name'] ?? ''));
+    $email = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
+    $phone = htmlspecialchars(trim($_POST['phone'] ?? ''));
+    $date = htmlspecialchars(trim($_POST['date'] ?? ''));
+    $boat_type = htmlspecialchars(trim($_POST['boat-type'] ?? ''));
+    $duration = htmlspecialchars(trim($_POST['duration'] ?? ''));
+    $services = isset($_POST['additional-services']) 
+        ? htmlspecialchars(implode(", ", $_POST['additional-services'])) 
+        : 'None';
+    $requests = htmlspecialchars(trim($_POST['requests'] ?? ''));
 
-    // Recipient email
-    $to = "stepannovv@gmail.com"; // Replace with your email
+    // Проверка обязательных полей
+    if (empty($name) || empty($email) || empty($phone) || empty($date) || empty($boat_type) || empty($duration)) {
+        echo "Error: All required fields must be filled.";
+        exit;
+    }
 
-    // Subject of the email
+    // Проверка email
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Error: Invalid email address.";
+        exit;
+    }
+
+    // Формирование письма
+    $to = "stepannovv@gmail.com"; // Замените на ваш email
     $subject = "New Boat Rental Booking";
-
-    // Message body
     $message = "
     Name: $name\n
     Email: $email\n
@@ -28,15 +38,16 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     Additional Services: $services\n
     Special Requests or Notes: $requests
     ";
+    $headers = "From: no-reply@yourdomain.com\r\n";
+    $headers .= "Reply-To: $email\r\n";
 
-    // Email headers
-    $headers = "From: $email";
-
-    // Send the email
+    // Отправка письма
     if (mail($to, $subject, $message, $headers)) {
-        echo "Your booking request has been sent successfully!";
+        // Перенаправление на страницу благодарности
+        header("Location: thank-you.html");
+        exit;
     } else {
-        echo "There was an error sending your booking request. Please try again later.";
+        echo "Error: Unable to send your request at the moment. Please try again later.";
     }
 }
 ?>

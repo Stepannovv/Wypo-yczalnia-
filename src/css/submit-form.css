@@ -26,10 +26,13 @@
   backdrop-filter: blur(15px);
 }
 .form-container:hover {
-  /* transition: 500ms; */
   background: rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(15px);
+}
+.form-container:hover label {
+  color: aqua;
+  transition: 700ms;
 }
 .form-container h1 {
   margin-bottom: 20px;
