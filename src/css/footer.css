@@ -13,8 +13,9 @@
   --default-duration: 250ms;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /*=====Mobile=====*/
-.footer {
+/* .footer {
   padding: 32px 0 32px 0;
 }
 
@@ -22,6 +23,50 @@
   max-width: 375px;
   margin: 0 auto;
   padding: 0 16px;
+} */
+/* Убедитесь, что футер занимает весь экран */
+.footer {
+  background-color: var(--main-bg-color); /* Используем переменную для фона */
+  padding: 32px 0; /* Паддинг для создания отступов */
+  width: 100%; /* Фон растягивается на весь экран */
+  position: relative; /* Для корректного отображения на всех устройствах */
+}
+
+/* Устанавливаем максимальную ширину контейнера футера */
+.container.footer-container {
+  max-width: 100%; /* Максимальная ширина на всех экранах */
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Для мобильных экранов */
+@media screen and (max-width: 375px) {
+  .footer {
+    padding: 32px 0; /* Мобильный отступ */
+  }
+  .container.footer-container {
+    max-width: 100%; /* Контейнер на весь экран */
+    padding: 0 16px; /* Паддинг для мобильных */
+  }
+}
+
+/* Для планшетов */
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 60px 0; /* Отступ для планшетов */
+  }
+  .container.footer-container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+}
+
+/* Для десктопов */
+@media screen and (min-width: 1440px) {
+  .container.footer-container {
+    max-width: 1440px;
+    padding: 0 196px;
+  }
 }
 .footer-top {
   display: flex;
@@ -95,7 +140,7 @@
 
 .footer-form-input:focus {
   outline: none;
-  border-bottom: 1px solid #e0373f;
+  border-bottom: 1px solid aqua;
 }
 
 .footer-form-input:focus::placeholder {
@@ -121,9 +166,9 @@
   opacity: 0.8;
   font-weight: 700;
   font-size: 25px;
-  background-color: #e0373f;
+  background-color: aqua;
   letter-spacing: 0.2em;
-  box-shadow: 0 0 10px #e0373f;
+  box-shadow: 0 0 10px blue;
 }
 
 .footer-bottom {

@@ -8,7 +8,7 @@ import 'aos/dist/aos.css';
 //   easing: 'ease-out-quart',
 // });
 AOS.init({
-  duration: 1000, // Adjusts animation speed
+  duration: 1500, // Adjusts animation speed
   easing: 'ease-out-quart', // Easing style
   once: false, // Ensures animation only happens once
   anchorPlacement: 'top-bottom', // Start animation when element is in view
